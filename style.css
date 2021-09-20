@@ -1,0 +1,123 @@
+.logo img {
+  width: 100px;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  border-radius: 50px;
+}
+
+main {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+
+.diver-wrap {
+  position: relative;
+  top: 0;
+  z-index: 99;
+  width: 992px !important;
+  max-width: 100%;
+  height: 100vh;
+  min-height: 1000px;
+  display: flex;
+  align-items: center;
+}
+
+.canvas {
+  display: flex;
+  justify-content: center;
+}
+
+.canvas canvas {
+  height: auto !important;
+  width: 80% !important;
+}
+
+.levels img {
+  width: 100%;
+  display: block;
+}
+
+.levels {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.level1,
+.level2,
+.level3 {
+  height: 3000px;
+  border: 1px solid;
+  position: relative;
+}
+
+.level3 {
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.s1,
+.scanvas,
+.h100 {
+  min-height: 800px;
+  height: 100vh;
+}
+
+.diver {
+  width: 992px;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.diver img {
+  position: fixed;
+  z-index: 11;
+  width: 992px;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.a1 {
+  position: absolute;
+  z-index: 20;
+  top: 2000px;
+}
+
+.a1 img {
+  position: relative;
+  width: 992px;
+}
+
+.text-r,
+.text-l {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1em;
+  border-radius: 10px;
+  top: 800px;
+  left: 50%;
+  right: -25%;
+}
+
+.text-l {
+  left: -25%;
+  right: 50%;
+}

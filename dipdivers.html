@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Dipdiver</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+    body {
+      margin: 0;
+      font-family: "VT323", monospace;
+      background: #1c92d2; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to bottom,
+        #4fc6fa,
+        #04293d
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to bottom,
+        #4fc6fa,
+        #04293d
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      min-height: 5000px;
+    }
+    /*
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      width: 100%;
+    }
+
+    .headline h1 {
+      font-size: 7em;
+      text-align: center;
+    }
+    .container {
+      width: 992px;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    .ddform {
+      padding: 1em;
+      border-radius: 10px;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .col8 {
+      width: 60%;
+    }
+
+    .col4 {
+      width: 40%;
+    }
+
+    #ddCanvas {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    #ddCanvas canvas {
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    .bg2 {
+      background: url("./imges/body2.png");
+      background-size: contain;
+
+      width: 100%;
+      height: 100%;
+      visibility: visible;
+      opacity: 1;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .handler {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      width: 50%;
+    }
+
+    .handlerWrap {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .masks {
+      position: absolute;
+      left: 0;
+      right: 0;
+      background: #333;
+      height: auto;
+      top: 800px;
+    }
+
+    .accesoirs {
+      position: absolute;
+      left: 0;
+      right: 0;
+      background: #333;
+      height: 200px;
+      top: 2000px;
+    }
+    @media screen and (max-width: 767px) {
+      .row {
+        flex-flow: column-reverse;
+      }
+      .col4,
+      .col8 {
+        width: 100%;
+      }
+      .handlerWrap {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    */
+  </style>
+  <body>
+    <div class="logo">
+      <img src="./imges//design/logo.gif" />
+    </div>
+    <div class="container">
+      <!--
+        <section class="s1">
+        <div class="headline">
+          <h1>DipDivers</h1>
+        </div>
+        <div class="row ddform">
+          <div class="col8">
+            <div id="ddCanvas" class="canvas"></div>
+          </div>
+          <div class="col4">
+            <div class="handlerWrap">
+              <div class="handler">
+                <p>Mask</p>
+                <div class="btns">
+                  <button id="maskl">&larr;</button>
+                  <button id="maskr">&rarr;</button>
+                </div>
+              </div>
+              <div class="handler">
+                <p>Fins</p>
+                <div class="btns">
+                  <button id="finl">&larr;</button>
+                  <button id="finr">&rarr;</button>
+                </div>
+              </div>
+              <div class="handler">
+                <p>Tank</p>
+                <div class="btns">
+                  <button id="tankl">&larr;</button>
+                  <button id="tankr">&rarr;</button>
+                </div>
+              </div>
+              <div class="handler">
+                <p>Accessoir</p>
+                <div class="btns">
+                  <button id="accessoirl">&larr;</button>
+                  <button id="accessoirr">&rarr;</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="export">Export</button>
+      </section>
+      -->
+
+      <div class="diver-wrap">
+        <div id="ddCanvas" class="canvas"></div>
+        <div class="handlerWrap">
+          <div class="handler">
+            <p>Mask</p>
+            <div class="btns">
+              <button id="maskl">&larr;</button>
+              <button id="maskr">&rarr;</button>
+            </div>
+          </div>
+          <div class="handler">
+            <p>Fins</p>
+            <div class="btns">
+              <button id="finl">&larr;</button>
+              <button id="finr">&rarr;</button>
+            </div>
+          </div>
+          <div class="handler">
+            <p>Tank</p>
+            <div class="btns">
+              <button id="tankl">&larr;</button>
+              <button id="tankr">&rarr;</button>
+            </div>
+          </div>
+          <div class="handler">
+            <p>Accessoir</p>
+            <div class="btns">
+              <button id="accessoirl">&larr;</button>
+              <button id="accessoirr">&rarr;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main>
+        <section class="levels">
+          <div class="level1">
+            <div class="img">
+              <img src="./imges/diver/level1.png" />
+            </div>
+            <div class="text-r">
+              <h2>Lorem ipsum</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s
+              </p>
+            </div>
+            <div class="text-l" style="top: 1500px">
+              <h2>Lorem ipsum</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s
+              </p>
+            </div>
+            <div>
+              <h2>Lorem ipsum</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s
+              </p>
+            </div>
+          </div>
+          <div class="level2">
+            <div class="img2">
+              <img src="./imges/diver/level2.png" />
+            </div>
+          </div>
+          <div class="level3">
+            <div class="img3">
+              <img src="./imges/diver/level3.png" />
+            </div>
+          </div>
+          <div class="end"></div>
+        </section>
+      </main>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+      integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="./script.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"
+      integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./p5diver.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>
