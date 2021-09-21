@@ -1,3 +1,13 @@
+let weapons = [
+  "./imges/accesoirs/1.png",
+  "./imges/accesoirs/2.png",
+  "./imges/accesoirs/3.png",
+  "./imges/accesoirs/4.png",
+];
+
+let weapon = weapons[0];
+let currWeapon = 0;
+
 let maskIndex = 0,
   tankIndex = 0,
   backIndex = 0,
@@ -21,17 +31,24 @@ function setup() {
   masks = loadImage("./imges/masks.png");
   tanks = loadImage("./imges/tanks.png");
   accessoirs = loadImage("./imges/accessoirs.png");
+
+  weapon1 = loadImage(weapons[0]);
+  weapon2 = loadImage(weapons[1]);
+  weapon3 = loadImage(weapons[2]);
+  weapon4 = loadImage(weapons[3]);
 }
 
 function draw() {
   // image(back, 0, 0)
   clear();
+  var weps = [weapon1, weapon2, weapon3, weapon4];
+  var wep = weps[currWeapon];
 
   image(body, 0, 0);
   image(fins, finXPos, 0);
   image(masks, maskXPos, 0);
   image(tanks, tankXPos, 0);
-  image(accessoirs, accessoirXPos, 0);
+  image(wep, accessoirXPos, 0);
 }
 
 function getXPos(index, currXpos, right) {
@@ -92,16 +109,17 @@ tankR.addEventListener("click", function () {
 var accessoirL = document.getElementById("accessoirl");
 var accessoirR = document.getElementById("accessoirr");
 accessoirL.addEventListener("click", function () {
-  accessoirIndex--;
-  let data = getXPos(accessoirIndex, accessoirXPos, false);
-  accessoirXPos = data["xpos"];
-  accessoirIndex = data["index"];
+  if (currWeapon == 0) {
+    currWeapon = weapons.length - 1;
+  } else {
+    currWeapon--;
+  }
 });
 accessoirR.addEventListener("click", function () {
-  accessoirIndex++;
-  let data = getXPos(accessoirIndex, accessoirXPos, true);
-  accessoirXPos = data["xpos"];
-  accessoirIndex = data["index"];
+  currWeapon++;
+  if (currWeapon >= weapons.length) {
+    currWeapon = 0;
+  }
 });
 
 var finL = document.getElementById("finl");

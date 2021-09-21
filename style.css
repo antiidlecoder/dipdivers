@@ -4,6 +4,11 @@
   top: 50px;
   left: 50px;
   border-radius: 50px;
+  z-index: 99;
+}
+
+h1 {
+  font-size: 6em;
 }
 
 main {
@@ -29,11 +34,19 @@ main {
   min-height: 1000px;
   display: flex;
   align-items: center;
+  flex-flow: column;
+}
+
+.handlerWrap {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
 }
 
 .canvas {
   display: flex;
   justify-content: center;
+  max-width: 80%;
 }
 
 .canvas canvas {
@@ -106,18 +119,26 @@ h1 {
   width: 992px;
 }
 
-.text-r,
-.text-l {
-  position: absolute;
+.text {
   background: rgba(255, 255, 255, 0.8);
   padding: 1em;
   border-radius: 10px;
-  top: 800px;
-  left: 50%;
-  right: -25%;
+  margin: 1em 0;
 }
 
+.text-r,
 .text-l {
-  left: -25%;
-  right: 50%;
+  position: absolute;
+  top: 800px;
+}
+
+@media screen and (min-width: 992px) {
+  .text-r {
+    left: 50%;
+    right: -25%;
+  }
+  .text-l {
+    left: -25%;
+    right: 50%;
+  }
 }
