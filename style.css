@@ -1,18 +1,81 @@
+body {
+  margin: 0;
+  font-family: "VT323", monospace;
+
+  font-family: lores-9-narrow, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  position: relative;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+body::after,
+body::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  content: "";
+  width: 2%;
+  height: 100%;
+  background: #1c92d2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #4fc6fa,
+    #04293d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #4fc6fa,
+    #04293d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body::after {
+  right: 0;
+  left: inherit;
+}
+
 .logo img {
   width: 100px;
   position: fixed;
   top: 50px;
-  left: 50px;
+  left: 3%;
   border-radius: 50px;
   z-index: 99;
 }
 
 h1 {
-  font-size: 6em;
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2.5em;
 }
 
 main {
   width: 100%;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.intro {
+  position: relative;
+  top: 10%;
+  margin-bottom: 50px;
+  width: 600px;
+  max-width: 90%;
+}
+
+.intro span {
+  display: block;
+  font-size: 1.8em;
+  padding: 30px 0;
 }
 
 .container {
@@ -24,14 +87,31 @@ main {
   height: 100%;
 }
 
+.wrap {
+  margin: 100px 0;
+  padding: 50px 20px 0 20px;
+  border-radius: 8px;
+
+  background: #1c92d2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #4fc6fa,
+    #04293d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #4fc6fa,
+    #04293d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .diver-wrap {
   position: relative;
   top: 0;
   z-index: 99;
   width: 992px !important;
   max-width: 100%;
-  height: 100vh;
-  min-height: 1000px;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   flex-flow: column;
@@ -40,18 +120,22 @@ main {
 .handlerWrap {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 600px;
+  max-width: 90%;
 }
 
 .canvas {
   display: flex;
   justify-content: center;
-  max-width: 80%;
+  max-width: 90%;
+  width: 600px;
+  margin-top: 100px;
 }
 
 .canvas canvas {
   height: auto !important;
-  width: 80% !important;
+  width: 100% !important;
+  border-radius: 8px;
 }
 
 .levels img {
@@ -62,23 +146,6 @@ main {
 .levels {
   max-width: 600px;
   margin: 0 auto;
-}
-
-.level1,
-.level2,
-.level3 {
-  height: 3000px;
-  border: 1px solid;
-  position: relative;
-}
-
-.level3 {
-  position: relative;
-  z-index: 1;
-}
-
-h1 {
-  margin-top: 0;
 }
 
 .s1,
@@ -126,10 +193,70 @@ h1 {
   margin: 1em 0;
 }
 
+/*
 .text-r,
 .text-l {
   position: absolute;
   top: 800px;
+}
+*/
+
+.accessoires {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.accessoire {
+  position: relative;
+  width: 32%;
+}
+
+.accessoire img {
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.faq {
+  width: 600px;
+  max-width: 100%;
+  margin: 100px auto;
+}
+
+.accordion {
+  font-family: lores-9-narrow, sans-serif;
+  background-color: #1c6e9a;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #04293d;
+}
+
+.panel {
+  padding: 0 25px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 @media screen and (min-width: 992px) {

@@ -6,25 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Dipdiver</title>
+    <link rel="stylesheet" href="https://use.typekit.net/htl5hdb.css" />
   </head>
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
-    body {
-      margin: 0;
-      font-family: "VT323", monospace;
-      background: #1c92d2; /* fallback for old browsers */
-      background: -webkit-linear-gradient(
-        to bottom,
-        #4fc6fa,
-        #04293d
-      ); /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(
-        to bottom,
-        #4fc6fa,
-        #04293d
-      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      min-height: 5000px;
-    }
     /*
     main {
       display: flex;
@@ -104,7 +88,7 @@
       top: 800px;
     }
 
-    .accesoirs {
+    .accessoires {
       position: absolute;
       left: 0;
       right: 0;
@@ -129,7 +113,7 @@
   </style>
   <body>
     <div class="logo">
-      <img src="./imges//design/logo.gif" />
+      <img src="./imges/design/logo.gif" />
     </div>
 
     <div class="container">
@@ -180,8 +164,19 @@
       -->
 
       <div class="diver-wrap">
-        <h1>Dip Divers</h1>
-
+        <div class="intro">
+          <div class="title">
+            <h1>DipDivers NFT</h1>
+          </div>
+          Are you prepared to find the bottom?
+          <span>11/01/21</span>
+          <a
+            href="https://www.google.com/calendar/event?action=TEMPLATE&text=Example%20Event&dates=20131124T010000Z/20131124T020000Z&details=Event%20Details%20Here&location=123%20Main%20St%2C%20Example%2C%20NY"
+            target="_blank"
+            class="calendar"
+            >Add to Google calendar</a
+          >
+        </div>
         <div id="ddCanvas" class="canvas"></div>
         <div class="handlerWrap">
           <div class="handler">
@@ -212,51 +207,134 @@
               <button id="accessoirr">&rarr;</button>
             </div>
           </div>
+          <div class="handler">
+            <p>Suit</p>
+            <div class="btns">
+              <button id="suitl">&larr;</button>
+              <button id="suitr">&rarr;</button>
+            </div>
+          </div>
         </div>
       </div>
 
       <main>
         <section class="levels">
+          <div class="wrap">
+            <h2>accessoires</h2>
+            <div class="accessoires">
+              <div class="accessoire">
+                <img src="./imges/body.png" class="bg" />
+                <img src="./imges/design/handgif.gif" />
+              </div>
+              <div class="accessoire">
+                <img src="./imges/body.png" class="bg" />
+                <img src="./imges/design/suitsgif.gif" />
+              </div>
+              <div class="accessoire">
+                <img src="./imges/body.png" class="bg" />
+                <img src="./imges/design/handgif.gif" />
+              </div>
+              <div class="accessoire">
+                <img src="./imges/body.png" class="bg" />
+                <img src="./imges/design/suitsgif.gif" />
+              </div>
+              <div class="accessoire">
+                <img src="./imges/body.png" class="bg" />
+                <img src="./imges/design/handgif.gif" />
+              </div>
+              <div class="accessoire">
+                <img src="./imges/body.png" class="bg" />
+                <img src="./imges/design/suitsgif.gif" />
+              </div>
+              <div class="accessoire">
+                <img src="./imges/body.png" class="bg" />
+                <img src="./imges/design/handgif.gif" />
+              </div>
+              <div class="accessoire">
+                <img src="./imges/body.png" class="bg" />
+                <img src="./imges/design/suitsgif.gif" />
+              </div>
+              <div class="accessoire">
+                <img src="./imges/body.png" class="bg" />
+                <img src="./imges/design/suitsgif.gif" />
+              </div>
+            </div>
+          </div>
+
           <div class="level1">
+            <div class="text text-r">
+              <h2>8m - 20m depth</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s
+              </p>
+            </div>
             <div class="img">
               <img src="./imges/diver/level1.png" />
             </div>
-            <div class="text text-r">
-              <h2>Lorem ipsum</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s
-              </p>
-            </div>
-            <div class="text text-l" style="top: 1500px">
-              <h2>Lorem ipsum</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s
-              </p>
-            </div>
-            <div class="text">
-              <h2>Lorem ipsum</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s
-              </p>
-            </div>
           </div>
           <div class="level2">
+            <div class="text">
+              <h2>21m - 40m depth</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s
+              </p>
+            </div>
             <div class="img2">
               <img src="./imges/diver/level2.png" />
             </div>
           </div>
           <div class="level3">
+            <div class="text">
+              <h2>41m - 60m depth</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s
+              </p>
+            </div>
             <div class="img3">
               <img src="./imges/diver/level3.png" />
             </div>
           </div>
           <div class="end"></div>
+        </section>
+        <section class="faq">
+          <h2>FAQ</h2>
+          <button class="accordion">What are DipDiver NFTs?</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <button class="accordion">How much is one DipDiver NFT?</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <button class="accordion">
+            When and how can I mint a DipDiver NFT?
+          </button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
         </section>
       </main>
     </div>

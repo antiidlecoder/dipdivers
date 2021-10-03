@@ -1,0 +1,56 @@
+[
+  {
+    "1": {
+      "first": 5,
+      "second": 4,
+      "third": 7,
+      "forth": 3,
+      "fifth": 9,
+      "sixth": 8,
+      "seventh": 6,
+      "eight": 3,
+      "maxSeqLen": 1,
+      "setSize": 7,
+      "highestFrequency0": 2,
+      "highestFrequency1": 1,
+      "highestFrequency2": 1,
+      "sum": 45
+    }
+  },
+  {
+    "2": {
+      "first": 8,
+      "second": 4,
+      "third": 8,
+      "forth": 9,
+      "fifth": 7,
+      "sixth": 5,
+      "seventh": 9,
+      "eight": 9,
+      "maxSeqLen": 2,
+      "setSize": 5,
+      "highestFrequency0": 3,
+      "highestFrequency1": 2,
+      "highestFrequency2": 1,
+      "sum": 59
+    }
+  },
+  {
+    "3": {
+      "first": 9,
+      "second": 11,
+      "third": 6,
+      "forth": 8,
+      "fifth": 5,
+      "sixth": 1,
+      "seventh": 5,
+      "eight": 6,
+      "maxSeqLen": 1,
+      "setSize": 6,
+      "highestFrequency0": 2,
+      "highestFrequency1": 2,
+      "highestFrequency2": 1,
+      "sum": 51
+    }
+  }
+]
