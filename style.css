@@ -208,13 +208,22 @@ img {
   justify-content: space-between;
   max-width: 100%;
   margin: 0 auto;
+  width: 992px;
 }
 
 .accessoire {
   position: relative;
-  width: 32%;
-  height: 180px;
+  width: 50%;
+  height: 300px;
 }
+
+.abg {
+  position: relative;
+  width: 50%;
+  height: 500px;
+  margin: 50px auto;
+}
+
 
 .accessoire img {
   border-radius: 8px;
@@ -224,6 +233,10 @@ img {
   right: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+.abg img {
   object-fit: contain;
 }
 
@@ -269,6 +282,9 @@ img {
 
   h2 {
     font-size: 2.5em;
+  }
+  .accessoire {
+    width: 33%;
   }
 }
 
